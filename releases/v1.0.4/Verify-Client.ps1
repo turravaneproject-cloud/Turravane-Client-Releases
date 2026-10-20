@@ -21,4 +21,4 @@ if ($Mode -eq 'Full') {
         Assert-ClientHash $item.path $expected
     }
 }
-[pscustomobject]@{Status='PASS';Mode=$Mode;FilesVerified=@($files).Count;ServerCompatibility='Requires matched server DLLCRC 964702844 and approved map matrix; not current live R1';Mutation='NONE'}
+[pscustomobject]@{Status='PASS';Mode=$Mode;FilesVerified=@($files).Count;ServerCompatibility='Requires matched server DLLCRC 964702844 and approved map matrix; verify server activation separately';Mutation='NONE'}
